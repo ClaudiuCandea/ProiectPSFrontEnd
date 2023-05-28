@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClientActivity">
+
+    <EditText
+        android:id="@+id/startText"
+        android:layout_width="265dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="2dp"
+        android:ems="10"
+        android:hint="Start location"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/destinationText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/destinationText"
+        android:layout_width="265dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="87dp"
+        android:ems="10"
+        android:hint="Destination"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/createOrderButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startText" />
+
+    <Button
+        android:id="@+id/createOrderButton"
+        android:layout_width="167dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="179dp"
+        android:onClick="createOrderMethod"
+        android:text="Create Order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/destinationText" />
+
+    <Button
+        android:id="@+id/LogOutButton"
+        android:layout_width="167dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="156dp"
+        android:onClick="logOutMethod"
+        android:text="Log out"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createOrderButton" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="267dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginBottom="26dp"
+        android:text="Where you want to go?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/startText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/deleteAccButton"
+        android:layout_width="167dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="201dp"
+        android:onClick="deleteAccountMethod"
+        android:text="Delete Account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LogOutButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/updateClientButton"
+        android:layout_width="167dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="124dp"
+        android:onClick="updateClientMethod"
+        android:text="Update info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteAccButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

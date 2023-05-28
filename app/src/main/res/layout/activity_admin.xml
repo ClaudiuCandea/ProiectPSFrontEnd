@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity">
+
+
+  <FrameLayout
+      android:id="@+id/frameAdmin"
+      android:layout_width="418dp"
+      android:layout_height="400dp"
+      android:layout_marginStart="1dp"
+      android:layout_marginBottom="4dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.625"
+      app:layout_constraintStart_toStartOf="parent">
+
+  </FrameLayout>
+
+  <Button
+      android:id="@+id/showAllClients"
+      android:layout_width="130dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="5dp"
+      android:layout_marginTop="12dp"
+      android:layout_marginEnd="5dp"
+      android:onClick="showClients"
+      android:text="showClients"
+      app:layout_constraintEnd_toStartOf="@+id/showAllDrivers"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/showAllDrivers"
+      android:layout_width="130dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="5dp"
+      android:layout_marginTop="12dp"
+      android:layout_marginEnd="4dp"
+      android:onClick="showDrivers"
+      android:text="showDrivers"
+      app:layout_constraintEnd_toStartOf="@+id/showAllUsers"
+      app:layout_constraintStart_toEndOf="@+id/showAllClients"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/showAllUsers"
+      android:layout_width="130dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="5dp"
+      android:layout_marginTop="12dp"
+      android:layout_marginEnd="5dp"
+      android:onClick="showUsers"
+      android:text="showUsers"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/showAllDrivers"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/showAllCars"
+      android:layout_width="130dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="5dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="5dp"
+      android:onClick="showCars"
+      android:text="showCars"
+      app:layout_constraintEnd_toStartOf="@+id/showAllOrders"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/showAllClients" />
+
+  <Button
+      android:id="@+id/showAllOrders"
+      android:layout_width="130dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="5dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="5dp"
+      android:onClick="showOrders"
+      android:text="showOrders"
+      app:layout_constraintEnd_toStartOf="@+id/showClientByID"
+      app:layout_constraintStart_toEndOf="@+id/showAllCars"
+      app:layout_constraintTop_toBottomOf="@+id/showAllDrivers" />
+
+  <Button
+      android:id="@+id/showClientByID"
+      android:layout_width="130dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="5dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="5dp"
+      android:onClick="showClientByID"
+      android:text="showClient"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/showAllOrders"
+      app:layout_constraintTop_toBottomOf="@+id/showAllUsers" />
+
+  <Button
+      android:id="@+id/showDriverByID"
+      android:layout_width="130dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="5dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="5dp"
+      android:onClick="showDriverByID"
+      android:text="showDriver"
+      app:layout_constraintEnd_toStartOf="@+id/showUserByID"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/showAllCars" />
+
+  <Button
+      android:id="@+id/showUserByID"
+      android:layout_width="130dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="5dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="5dp"
+      android:onClick="showUserByID"
+      android:text="showUser"
+      app:layout_constraintEnd_toStartOf="@+id/showCarByID"
+      app:layout_constraintStart_toEndOf="@+id/showDriverByID"
+      app:layout_constraintTop_toBottomOf="@+id/showAllOrders" />
+
+  <Button
+      android:id="@+id/showCarByID"
+      android:layout_width="130dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="5dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="5dp"
+      android:onClick="showCarByID"
+      android:text="showCar"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/showUserByID"
+      app:layout_constraintTop_toBottomOf="@+id/showClientByID" />
+
+  <Button
+      android:id="@+id/showOrderByID"
+      android:layout_width="130dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="5dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="288dp"
+      android:onClick="showOrderByID"
+      android:text="showOrder"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/showDriverByID" />
+
+  <EditText
+      android:id="@+id/fieldForID"
+      android:layout_width="277dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="116dp"
+      android:layout_marginTop="4dp"
+      android:ems="10"
+      android:hint="ID"
+      android:inputType="text"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/showOrderByID" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

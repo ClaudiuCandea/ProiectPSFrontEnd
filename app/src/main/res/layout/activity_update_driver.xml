@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateDriverActivity">
+
+    <TextView
+        android:id="@+id/textViewUpdate2"
+        android:layout_width="167dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="436dp"
+        android:layout_marginEnd="122dp"
+        android:text="Update Car"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordDriverTextUpdate"
+        android:layout_width="323dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="57dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUpdate" />
+
+    <EditText
+        android:id="@+id/registrationTextUpdate"
+        android:layout_width="315dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Registration Number"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUpdate2" />
+
+    <EditText
+        android:id="@+id/producerTextUpdate"
+        android:layout_width="323dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="producer"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/registrationTextUpdate" />
+
+    <EditText
+        android:id="@+id/modelTextUpdate"
+        android:layout_width="323dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Model"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/producerTextUpdate" />
+
+    <EditText
+        android:id="@+id/phoneDriverTextUpdate"
+        android:layout_width="323dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordDriverTextUpdate" />
+
+
+    <EditText
+        android:id="@+id/emailDriverTextUpdate"
+        android:layout_width="321dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="57dp"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneDriverTextUpdate" />
+
+    <TextView
+        android:id="@+id/textViewUpdate"
+        android:layout_width="167dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="122dp"
+        android:text="Update Driver"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nameDriverTextUpdate"
+        android:layout_width="330dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="264dp"
+        android:layout_marginEnd="57dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUpdate" />
+
+    <Button
+        android:id="@+id/UpdateDriverInfo"
+        android:layout_width="119dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="updateDriverAndCar"
+        android:text="Update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modelTextUpdate" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="114dp"
+        android:text="Password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="76dp"
+        android:text="Phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="56dp"
+        android:text="Email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="67dp"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="85dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="99dp"
+        android:text="Registration Number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameDriverTextUpdate" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        android:text="Producer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Model"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
